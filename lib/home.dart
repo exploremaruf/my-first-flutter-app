@@ -8,19 +8,37 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  
-  int count =0;
-  
+  int count = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text('Home'),
-        
-        
+      appBar: AppBar(title: Text('Home')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('C. RONALDO'),
+              style: ElevatedButton.styleFrom(minimumSize: Size(200, 50)),
+            ),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('L. Messi'),
+              style: ElevatedButton.styleFrom(minimumSize: Size(200, 50)),
+            ),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('Neymar jr.'),
+              style: ElevatedButton.styleFrom(minimumSize: Size(200, 50)),
+            ),
+          ],
+        ),
       ),
-      
     );
   }
 }
