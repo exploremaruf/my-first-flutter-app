@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstflutterapp/ronaldo.dart';
 
+import 'messi.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -30,7 +32,10 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: 10),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Messi(),));
+
+              },
               child: Text('L. Messi'),
               style: ElevatedButton.styleFrom(minimumSize: Size(200, 50)),
             ),
