@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstflutterapp/ronaldo.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -20,7 +21,10 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ronaldo(),));
+
+              },
               child: Text('C. RONALDO'),
               style: ElevatedButton.styleFrom(minimumSize: Size(200, 50)),
             ),
