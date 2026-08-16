@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstflutterapp/neymar.dart';
 import 'package:myfirstflutterapp/ronaldo.dart';
 
 import 'messi.dart';
@@ -24,8 +25,10 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => ronaldo(),));
-
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ronaldo()),
+                );
               },
               child: Text('C. RONALDO'),
               style: ElevatedButton.styleFrom(minimumSize: Size(200, 50)),
@@ -33,15 +36,21 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Messi(),));
-
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Messi()),
+                );
               },
               child: Text('L. Messi'),
               style: ElevatedButton.styleFrom(minimumSize: Size(200, 50)),
             ),
             SizedBox(height: 10),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Neymar()));
+
+              },
               child: Text('Neymar jr.'),
               style: ElevatedButton.styleFrom(minimumSize: Size(200, 50)),
             ),
